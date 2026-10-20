@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080707">
+  <meta name="description" content="Archivo Maldito: historias, leyendas y evidencias de la internet oscura.">
+  <title>ARCHIVO MALDITO.exe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#inicio">ARCHIVO<span>MALDITO</span><small>.exe</small></a>
+    <nav>
+      <a href="#archivo">ARCHIVOS</a>
+      <a href="#evidencias">EVIDENCIAS</a>
+      <a href="#terminal">TERMINAL</a>
+    </nav>
+    <span class="online"><i></i> CONEXIÓN INESTABLE</span>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content reveal">
+        <p class="eyebrow">[ BASE DE DATOS NO AUTORIZADA ]</p>
+        <h1>NO TODO LO QUE<br>VES EN INTERNET<br><span>ESTÁ MUERTO.</span></h1>
+        <p class="hero-description">
+          Un archivo de leyendas, imágenes perturbadoras y registros
+          que alguien intentó borrar de la red.
+        </p>
+        <a class="button" href="#archivo">ACCEDER AL ARCHIVO <span>↘</span></a>
+        <p class="tiny-warning">ADVERTENCIA: algunos registros están incompletos.</p>
+      </div>
+      <div class="hero-stamp" aria-hidden="true">
+        <span>NO</span><span>MIRES</span><span>ATRÁS</span>
+      </div>
+      <div class="hero-footer">
+        <span>SYS://UNKNOWN</span>
+        <span>ÚLTIMO ACCESO: DESCONOCIDO</span>
+        <span>ERROR 0x0000333</span>
+      </div>
+    </section>
+
+    <section class="intro reveal">
+      <p class="eyebrow">// REGISTRO 00 — INTRODUCCIÓN</p>
+      <h2>Bienvenido al <span>lado perdido</span> de la red.</h2>
+      <p>
+        Antes de los algoritmos y las redes sociales, existían foros,
+        páginas abandonadas y archivos compartidos sin explicación.
+        Algunas historias nacieron como ficción. Otras se hicieron
+        famosas porque nadie podía demostrar qué había detrás.
+      </p>
+    </section>
+
+    <section class="archive section" id="archivo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">// DIRECTORIO PRINCIPAL</p>
+          <h2>ARCHIVOS <span>RECUPERADOS</span></h2>
+        </div>
+        <span class="counter">REGISTROS: <b id="result-count">6</b></span>
+      </div>
+
+      <div class="search-row">
+        <span class="search-icon">⌕</span>
+        <input id="search" type="search" placeholder="Buscar archivo..." autocomplete="off">
+        <span class="search-label">[ ENTER ]</span>
+      </div>
+
+      <div class="filters" aria-label="Filtrar historias">
+        <button class="filter active" data-filter="todos">TODOS</button>
+        <button class="filter" data-filter="entidad">ENTIDADES</button>
+        <button class="filter" data-filter="imagen">IMÁGENES</button>
+        <button class="filter" data-filter="juego">JUEGOS</button>
+        <button class="filter" data-filter="leyenda">LEYENDAS</button>
+      </div>
+
+      <div class="card-grid" id="story-grid">
+        <article class="story-card reveal" data-category="entidad" data-title="slender man">
+          <div class="card-image">
+            <img src="slender.jpg" alt="Imagen de Slender Man" loading="lazy">
+            <span class="file-tag">FILE_001.jpg</span>
+            <span class="image-mark">?</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">ENTIDAD // 2009</p>
+            <h3>SLENDER MAN</h3>
+            <p>Una figura alta, sin rostro, que aparece donde nunca debería estar.</p>
+            <button class="read-button" data-story="slender">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+
+        <article class="story-card reveal" data-category="entidad" data-title="jeff the killer">
+          <div class="card-image">
+            <img src="jeff.jpg" alt="Imagen de Jeff the Killer" loading="lazy">
+            <span class="file-tag">FILE_002.jpg</span>
+            <span class="image-mark">!</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">CASO // 2008–2011</p>
+            <h3>JEFF THE KILLER</h3>
+            <p>Un rostro convertido en leyenda dentro de los foros de terror.</p>
+            <button class="read-button" data-story="jeff">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+
+        <article class="story-card reveal" data-category="juego" data-title="ben drowned">
+          <div class="card-image">
+            <img src="ben.jpg" alt="Imagen de BEN Drowned" loading="lazy">
+            <span class="file-tag">FILE_003.png</span>
+            <span class="image-mark">404</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">JUEGO // 2010</p>
+            <h3>BEN DROWNED</h3>
+            <p>Una copia de Majora's Mask, una partida extraña y mensajes imposibles.</p>
+            <button class="read-button" data-story="ben">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+
+        <article class="story-card reveal" data-category="entidad" data-title="the rake">
+          <div class="card-image">
+            <img src="rake.jpg" alt="Imagen de The Rake" loading="lazy">
+            <span class="file-tag">FILE_004.jpg</span>
+            <span class="image-mark">///</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">CRIATURA // 2005</p>
+            <h3>THE RAKE</h3>
+            <p>Relatos de una criatura que aparece durante la noche y observa en silencio.</p>
+            <button class="read-button" data-story="rake">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+
+        <article class="story-card reveal" data-category="leyenda" data-title="momo">
+          <div class="card-image">
+            <img src="momo.jpg" alt="Imagen asociada a la leyenda de Momo" loading="lazy">
+            <span class="file-tag">FILE_005.jpg</span>
+            <span class="image-mark">???</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">LEYENDA DIGITAL // 2018</p>
+            <h3>MOMO</h3>
+            <p>Una imagen viral que se convirtió en una de las leyendas urbanas de internet.</p>
+            <button class="read-button" data-story="momo">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+
+        <article class="story-card reveal" data-category="imagen" data-title="smile dog">
+          <div class="card-image">
+            <img src="smiledog.jpg"
+                 alt="Perro asociado al expediente Smile Dog" loading="lazy">
+            <span class="file-tag">FILE_006.jpg</span>
+            <span class="image-mark">:-)</span>
+          </div>
+          <div class="card-content">
+            <p class="card-meta">IMAGEN MALDITA // 2008</p>
+            <h3>SMILE DOG</h3>
+            <p>Una imagen que, según la leyenda, nunca deberías compartir ni volver a mirar.</p>
+            <button class="read-button" data-story="smile">ABRIR EXPEDIENTE ↗</button>
+          </div>
+        </article>
+      </div>
+      <p id="no-results" class="no-results" hidden>ERROR 404: NO SE ENCONTRARON ARCHIVOS.</p>
+    </section>
+
+    <section class="evidence section" id="evidencias">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">// MATERIAL RECUPERADO</p>
+          <h2>GALERÍA DE <span>EVIDENCIAS</span></h2>
+        </div>
+        <span class="counter">3 IMÁGENES + 1 VIDEO</span>
+      </div>
+      <p class="section-description">
+        Archivos visuales recuperados de directorios desconocidos.
+        Seleccioná una evidencia para verla en detalle.
+      </p>
+
+      <div class="evidence-grid">
+        <button class="evidence-item reveal" data-evidence="img/evidencia1.jpg" data-kind="image">
+          <img src="evidencia1.jpg" alt="Evidencia 1: lugar abandonado" loading="lazy">
+          <span class="evidence-label">EVIDENCIA_01.jpg</span>
+          <span class="evidence-number">01</span>
+        </button>
+        <button class="evidence-item reveal" data-evidence="img/evidencia2.jpg" data-kind="image">
+          <img src="evidencia2.jpg" alt="Evidencia 2: pasillo oscuro" loading="lazy">
+          <span class="evidence-label">EVIDENCIA_02.jpg</span>
+          <span class="evidence-number">02</span>
+        </button>
+        <button class="evidence-item reveal" data-evidence="img/evidencia3.jpg" data-kind="image">
+          <img src="evidencia3.jpg" alt="Evidencia 3: objeto recuperado" loading="lazy">
+          <span class="evidence-label">EVIDENCIA_03.jpg</span>
+          <span class="evidence-number">03</span>
+        </button>
+        <button class="evidence-item evidence-video-item reveal"
+                data-evidence="img/evidencia4.mp4" data-kind="video">
+          <video src="evidencia4.mp4" muted loop autoplay playsinline preload="metadata"
+                 aria-label="Vista previa del video de evidencia 4"></video>
+          <span class="video-indicator">▶ VIDEO</span>
+          <span class="evidence-label">EVIDENCIA_04.mp4</span>
+          <span class="evidence-number">04</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="terminal-section section reveal" id="terminal">
+      <p class="eyebrow">// TERMINAL REMOTA — ACCESO LIMITADO</p>
+      <h2>¿SEGUÍS <span>AHÍ?</span></h2>
+      <p class="terminal-description">Algunos comandos devuelven respuestas que no deberían existir.</p>
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p>unknown@archive:~</p>
+        </div>
+        <div class="terminal-output" id="terminal-output">
+          <p>ARCHIVE OS [versión desconocida]</p>
+          <p>Escribí <b>ayuda</b> para ver los comandos disponibles.</p>
+        </div>
+        <form id="terminal-form">
+          <label for="terminal-input">guest@unknown:~$</label>
+          <input id="terminal-input" type="text" placeholder="escribir comando..." autocomplete="off">
+          <button type="submit" aria-label="Ejecutar comando">↵</button>
+        </form>
+      </div>
+      <p class="terminal-footnote">NO INTRODUZCAS INFORMACIÓN PERSONAL.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#inicio">ARCHIVO<span>MALDITO</span><small>.exe</small></a>
+    <p>UN ARCHIVO DE FICCIÓN, LEYENDAS Y MISTERIOS DIGITALES.</p>
+    <p class="copyright">© 2000–2026 // TODOS LOS REGISTROS SON SOSPECHOSOS</p>
+    <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a>
+  </footer>
+
+  <div class="modal" id="story-modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Cerrar expediente">×</button>
+      <p class="eyebrow" id="modal-code">// EXPEDIENTE RECUPERADO</p>
+      <h2 id="modal-title">ARCHIVO</h2>
+      <div class="modal-image-wrap">
+        <img id="modal-image" src="" alt="">
+      </div>
+      <div class="modal-text" id="modal-text"></div>
+      <p class="modal-warning">[ FIN DEL REGISTRO — NO SE GARANTIZA LA AUTENTICIDAD ]</p>
+    </div>
+  </div>
+
+  <div class="lightbox" id="evidence-modal" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar evidencia">×</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
